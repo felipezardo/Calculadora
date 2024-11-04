@@ -8,9 +8,14 @@ export default function App() {
   const [primeiroValor, setPrimeiroValor] = useState();
   const [segundoValor, setSegundoValor] = useState();
   const [resultado, setResultado] = useState();
+  const [temaEscuro, setTemaEscuro] = useState(false);
+
   const tocarSom = () => {
     const audio = new Audio(acertoSom);
     audio.play();
+  };
+  const alternarTema = () => {
+    setTemaEscuro(!temaEscuro);
   };
   
 
@@ -49,11 +54,14 @@ export default function App() {
 
   return (
     <body>
-      <S.GlobalStyle />
+      <S.GlobalStyle  temaEscuro={temaEscuro} />
       <main>
-        
-      <h1>Calculadora</h1>
+      
+      <h1>Calculadora <button class="btn-tema" onClick={alternarTema}>
+          {temaEscuro ? "☀ " : "☾  "}
+        </button></h1>
       {/* onChange é um evento de js, de mudança/alteração, pega a mudança que ocorre no input. Captura o que o usuário está digitando */}
+      
       <input
         onChange={capturandoPrimeiroValor}
         type="number"
@@ -70,14 +78,17 @@ export default function App() {
       <button onClick={soma}>+</button>
       <button onClick={subtracao}>-</button>
       <button onClick={multiplicacao}>x</button>
-      <button onClick={divisao}>/</button>
+      <button onClick={divisao}>÷</button>
       <button onClick={limpar}>C</button>
       </section>
-      
-     
       <h3>{resultado}</h3>
+     
+      
+      
       
       </main>
+      
+        <footer></footer>
     </body>
   );
 }
