@@ -3,6 +3,7 @@ import styled, { createGlobalStyle } from "styled-components";
 // pra usar o reset precisamos importar essa funcionalidade createGlobalStyle
 
 export const GlobalStyle = createGlobalStyle`
+
 *{
     margin: 0;
     padding: 0;
@@ -13,6 +14,7 @@ body{
 display:flex;
 justify-content:center;
 align-items:center;
+ font-family: "Exo 2", serif;
 height:100vh;
 background-color: #dadaed;
  background-color: ${({ temaEscuro }) => (temaEscuro ? "#202222" : "#dadaed")};
@@ -24,6 +26,7 @@ display:flex;
 flex-direction:column;
 text-align:center;
 padding:15px;
+margin:0 0 20%;
  background-color: ${({ temaEscuro }) => (temaEscuro ? "#202222" : "#dadaed")};
 border-radius:15px;
 box-shadow: ${({ temaEscuro }) =>

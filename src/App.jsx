@@ -58,7 +58,7 @@ export default function App() {
       <main>
       
       <h1>Calculadora <button class="btn-tema" onClick={alternarTema}>
-          {temaEscuro ? "☀ " : "☾  "}
+          {temaEscuro ? "◑" : "◐"}
         </button></h1>
       {/* onChange é um evento de js, de mudança/alteração, pega a mudança que ocorre no input. Captura o que o usuário está digitando */}
       
@@ -88,7 +88,7 @@ export default function App() {
       
       </main>
       
-        <footer></footer>
+        
     </body>
   );
 }
