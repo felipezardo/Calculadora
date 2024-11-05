@@ -57,9 +57,12 @@ export default function App() {
       
       <main>
       <S.GlobalStyle  temaEscuro={temaEscuro} />
+      
       <h1>Calculadora <button className="btn-tema" onClick={alternarTema}>
           {temaEscuro ? "◑" : "◐"}
         </button></h1>
+      
+      
       {/* onChange é um evento de js, de mudança/alteração, pega a mudança que ocorre no input. Captura o que o usuário está digitando */}
       
       <input

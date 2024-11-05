@@ -17,7 +17,7 @@ align-items:center;
  font-family: "Exo 2", serif;
 height:100vh;
 background-color: #dadaed;
- background-color: ${({ temaEscuro }) => (temaEscuro ? "#202222" : "#dadaed")};
+ background-color: ${({ temaEscuro }) => (temaEscuro ? "#212121" : "#dadaed")};
   color: ${({ temaEscuro }) => (temaEscuro ? "#01fbfb" : "black")};
 transition: background-color 0.5s ease, color 0.5s ease;
 
@@ -27,7 +27,7 @@ flex-direction:column;
 text-align:center;
 padding:15px;
 margin:0 0 20%;
- background-color: ${({ temaEscuro }) => (temaEscuro ? "#202222" : "#dadaed")};
+ background-color: ${({ temaEscuro }) => (temaEscuro ? "#212121" : "#dadaed")};
 border-radius:15px;
 box-shadow: ${({ temaEscuro }) =>
     temaEscuro
@@ -40,12 +40,15 @@ box-shadow: ${({ temaEscuro }) =>
          
  transition: background-color 0.5s ease, box-shadow 0.5s ease;
 
+
+
 .btn-tema{
+
 font-weight:500;
 border:none;
 background: none;
 cursor:pointer;
-font-size:1.2rem;
+font-size:1.8rem;
 color: ${({ temaEscuro }) => (temaEscuro ? "#01fbfb" : "black")};
 transition: background-color 0.5s ease, color 0.5s ease;
 }
@@ -62,8 +65,8 @@ height:30px;
 font-size:1.2rem;
 cursor:pointer;
 border-radius:5px;
- background-color: ${({ temaEscuro }) => (temaEscuro ? "##202222" : "#dadaed")};
- background-color: ${({ temaEscuro }) => (temaEscuro ? "#202222" : "#dadaed")};
+ background-color: ${({ temaEscuro }) => (temaEscuro ? "#212121" : "#dadaed")};
+ 
 color: ${({ temaEscuro }) => (temaEscuro ? "#01fbfb" : "black")};
 border-color:${({ temaEscuro }) => (temaEscuro ? "#01fbfb" : "black")};
 transition: filter 0.3s ease;
@@ -81,7 +84,7 @@ margin:5px;
 border-radius:25px;
 padding:8px 15px;
 font-size:1.2rem;
-background-color: ${({ temaEscuro }) => (temaEscuro ? "#121212" : "#dadaed")};
+background-color: ${({ temaEscuro }) => (temaEscuro ? "#212121" : "#dadaed")};
 color: ${({ temaEscuro }) => (temaEscuro ? "#01fbfb" : "black")};
 border-color:${({ temaEscuro }) => (temaEscuro ? "#01fbfb" : "black")};
  transition: background-color 0.5s ease, color 0.5s ease;
