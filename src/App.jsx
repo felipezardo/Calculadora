@@ -52,6 +52,11 @@ export default function App() {
     setResultado(undefined);
   };
 
+  // condição para desabilitar os botões se n tiver nenhum valor inserido nos inputs
+  const isButtonDisabled = 
+  (primeiroValor === undefined || segundoValor === undefined) ||
+  (primeiroValor === 0 && segundoValor === 0);
+
   return (
     
       
@@ -78,11 +83,11 @@ export default function App() {
         value={segundoValor === undefined ? '' : segundoValor}
       />
       <section>
-      <button onClick={soma}>+</button>
-      <button onClick={subtracao}>-</button>
-      <button onClick={multiplicacao}>x</button>
-      <button onClick={divisao}>÷</button>
-      <button onClick={limpar}>C</button>
+      <button onClick={soma} disabled={isButtonDisabled}>+</button>
+      <button onClick={subtracao} disabled={isButtonDisabled}>-</button>
+      <button onClick={multiplicacao} disabled={isButtonDisabled}>x</button>
+      <button onClick={divisao} disabled={isButtonDisabled}>÷</button>
+      <button onClick={limpar} >C</button>
       </section>
       <h3>{resultado}</h3>
      
