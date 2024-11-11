@@ -11,8 +11,7 @@ export default function App() {
   const [temaEscuro, setTemaEscuro] = useState(false);
 
   const audio = new Audio(acertoSom);
-   // Reiniciar o som para que ele toque do início a cada vez
-  audio.currentTime = 0;
+ 
   const tocarSom = () => {
     
     audio.play();
